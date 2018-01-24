@@ -1,7 +1,7 @@
 class Ipopt < Formula
   homepage 'https://projects.coin-or.org/Ipopt'
   url 'http://www.coin-or.org/download/source/Ipopt/Ipopt-3.12.8.tgz'
-  sha256 '292afd952c25ec9fe6225041683dcbd3cb76e15a128764671927dbaf881c2e89'
+  sha256 '62c6de314220851b8f4d6898b9ae8cf0a8f1e96b68429be1161f8550bb7ddb03'
   revision 1
 
   bottle do
