@@ -22,9 +22,9 @@ class Ipopt < Formula
 
 
   # Need this snippet in every formula that has a runtime dependency on libgfortran
-  def post_install
-    fixup_libgfortran prefix
-  end
+  # def post_install
+  #   fixup_libgfortran prefix
+  # end
 
   # Need to enable this when building the bottle, disable it when installing from bottles
   depends_on "gcc" if ARGV.build_bottle?
