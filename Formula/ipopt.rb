@@ -5,7 +5,7 @@ class Ipopt < Formula
   revision 1
 
  bottle do
-   root_url 'https://github.com/chkwon/homebrew-juliaopt/releases/download/v3.12.8'
+   root_url 'https://bintray.com/chkwon/juliaopt/download_file?file_path='
    cellar :any
    rebuild 3
    sha256 "899ed068cc3db0833740cb7c2150a4d98141628977cd943308a99e46242d9165" => :high_sierra
