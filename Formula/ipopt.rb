@@ -27,7 +27,8 @@ class Ipopt < Formula
     system "cd ThirdParty/Lapack; ./get.Lapack"
     system "cd ThirdParty/Lapack; ./configure --prefix=#{prefix} --disable-shared --with-pic; make install"
     system "cd ThirdParty/ASL; ./get.ASL"
-    system "cd ThirdParty/Mumps; ./get.Mumps"
+    system "cd ThirdParty/Mumps; sed -i '' 's/wgetcmd=ftp/wgetcmd=\"curl -L -k -O\"/g' get.Mumps
+; ./get.Mumps"
     system "./configure", "--disable-dependency-tracking",
                           "--with-blas=#{prefix}/lib/libcoinblas.a",
                           "--with-lapack=#{prefix}/lib/libcoinlapack.a",
