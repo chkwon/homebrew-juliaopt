@@ -11,8 +11,8 @@ class Ipopt < Formula
    sha256 "899ed068cc3db0833740cb7c2150a4d98141628977cd943308a99e46242d9165" => :high_sierra
  end
 
-  # Need to enable this when building the bottle, disable it when installing from bottles
-  depends_on "gcc" if ARGV.build_bottle?
+  # depends_on "gcc" if ARGV.build_bottle?
+  depends_on "gcc"
 
   def install
     system "cd ThirdParty/Mumps; sed -i '' 's/wgetcmd=ftp/wgetcmd=\"curl -L -k -O\"/g' get.Mumps; ./get.Mumps"
