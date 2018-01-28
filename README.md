@@ -2,6 +2,12 @@ To help install Ipopt and Cbc binaries for macOS 10.13 High Sierra.
 
 First need to install [Homebrew](https://brew.sh).
 
+Also need to install Xcode command line tools:
+```
+xcode-select --install
+```
+
+
 # Ipopt
 
 ```bash
